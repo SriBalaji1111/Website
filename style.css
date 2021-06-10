@@ -1,0 +1,69 @@
+.menu{
+	display : flex;
+	justify-content : space-between;
+	background-color : black;
+	padding : 15px;
+	font-size : 20px;
+	font-family : Lucida Calligraphy, Lucida Handwriting, WhisperWrite, Brush Script MT;
+	font-weight : 400;
+	color : white;
+}
+
+body{
+	margin : 0px;
+	background-color : whitesmoke;
+	background-image : url('background.jpg');
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+
+h2{
+	color : white;
+	
+}
+h5{
+	color : white;
+	
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family : Lucida Calligraphy, Lucida Handwriting, WhisperWrite, Brush Script MT;
+}
+.gridimg {
+  display: flex;
+  flex-wrap : wrap;
+  border : 2px solid black;
+  border-radius : 50px;
+
+}
+.game {
+  flex-grow: 1;
+  background-color : whitesmoke;
+  font-family : fantasy;
+  border-radius : 20px;
+  width: 310px;
+  padding : 30px;
+  margin : 25px;
+  color : #000000;
+}
+
+.game + .game {
+  margin-left: 2%;
+}
+.game img {
+	height : 200px;
+	width : 200px;
+    
+}
+.noline{
+	text-decoration: none;
+}
+.a:link{
+	color : white;
+}
+.game:hover{
+	transform : scale(1.05);
+}
