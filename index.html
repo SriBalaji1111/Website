@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Sri Balaji's Best Projects </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-   <body>
-       <div class="header">
-	        <div class="menu">
-				
-				<div>Sri Balaji's Best Projects</div>
-				<div><a href="https://github.com/SriBalaji1111" class="noline">About Me</a></div>
-			</div>
-			
-       </div>
-	   <div class="bodyImg">
-	   
-			<img src="background.jpg" height="600px" width="100%" />
-			<div class="centered">
-				<h2><br><b>
-					Balaji is a very fast learner and grasps concepts really well. Even after the complexity of classes has increased his enthusiasm level is still high and takes classes very frequently. He has completed most of the projects well ahead of time and mostly himself. His analytical thinking is improving really well as he is able to identify and solve issues himself</b>
-				</h2></center>
-	        </div>
-	   </div>
-	   <div class="gridimg">
-	     <div class="game">
-		   <center>
-		     <a href="https://sribalaji1111.github.io/TICK-TOCK/"><img src="https://whjr.imgix.net/ee85a9b0-1e0d-4eb9-a4db-1f7ee8c8085a.jpg"/></a>
-			 <h3> Tick Tok </h3>
-		   </center>
-		 </div>
-		 <div class="game">
-		   <center>
-		     <a href="https://sribalaji1111.github.io/Plucking-Mangoes/"><img src="https://whjr.imgix.net/3a7d7c25-4520-47e9-931c-a468a22656ae.jpg"></a>
-			 <h3> Plucking Mangoes </h3>
-		   </center>
-		 </div>
-		 <div class="game">
-		   <center>
-		     <a href="https://sribalaji1111.github.io/ORIGAMI-WEBSITE-DESIGN-PART-4/"><img src="https://whjr.imgix.net/38cb854b-d548-4ad0-b548-96cd8cb60a48.jpg"></a>
-			 <h3> Origami Website </h3>
-		   </center>
-		 </div>
-		 <div class="game">
-		   <center>
-		     <a href="https://snack.expo.io/@sribalajid/dj-audio-mixer-app-stage-1"><img src="https://whjr.imgix.net/4fc4fb6b-ef18-407f-af46-da7a6bb76dae.jpg"></a>
-			 <h3> Dj Audio Mixer </h3>
-		   </center>
-		 </div>
-		 <div class="game">
-		   <center>
-		     <a href="https://sribalaji1111.github.io/BULLETS-AND-WALLS/"><img src="https://whjr.imgix.net/2b9bd550-abb8-4284-8960-9074fc5caaa4.png"></a>
-			 <h3> Bullets and Walls </h3>
-		   </center>
-		 </div>
-		 
-		 <div class="game">
-		   <center>
-		     <a href="https://editor.p5js.org/SriBalaji/sketches/5mIFpKY5b"><img src="https://whjr.imgix.net/81147257-df8f-4c2b-8b5a-3c0bdf4235ee.png"></a>
-			 <h3> Balloon Buster -5 </h3>
-		  </center>
-		 </div>
-		 
-	   </div>
-	   
-    </body>
-</html>
+<title>My Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.mySlides {display:none}
+</style>
+<body>
 
-   
+
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="img1.png" style="width:100%">
+  <img class="mySlides" src="img2.png" style="width:100%">
+  <img class="mySlides" src="img3.png" style="width:100%">
+  <img class="mySlides" src="img4.png" style="width:100%">
+  <img class="mySlides" src="img5.png" style="width:100%">
+  <img class="mySlides" src="img6.png" style="width:100%">
+  <img class="mySlides" src="img7.png" style="width:100%">
+  <img class="mySlides" src="img8.png" style="width:100%">
+  <img class="mySlides" src="img9.png" style="width:100%">
+  <img class="mySlides" src="img10.png" style="width:100%">
+  <img class="mySlides" src="img11.png" style="width:100%">
+  <img class="mySlides" src="img12.png" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+</body>
+</html>
